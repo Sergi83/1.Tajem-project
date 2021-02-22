@@ -157,6 +157,7 @@ body {
     background: #fff;
     box-sizing: border-box;
     text-align: center;
+    border: 0;
 }
 
 a,
@@ -167,70 +168,11 @@ a:focus {
     outline: none;
 }
 
-header {
-    line-height: 20px;
-    width: 100%;
-    height: 5em;
-}
-
-.hero {
-    color: #fff;
-    background: #955cd6 url(../images/hero-background-1.jpg) no-repeat center;
-    background-size: cover;
-    border: 0;
-    width: 100%;
-    height: auto;
-    padding: 15px;
-    box-sizing: border-box;
-}
-
 .content {
-    background: #fff;
-}
-
-.story {
-    overflow: hidden;
-    padding: 85px 15px 105px 15px;
-}
-
-.story-title {
-    text-align: left;
-}
-
-.video {
-    background: #955cd6 url(../images/video-background-2.jpg) no-repeat center;
-    background-size: cover;
-    border: 0;
     width: auto;
-    padding: 150px 15px 150px 15px;
-    color: #fff;
-}
-
-.video-center {
-    text-align: center;
-}
-
-.team {
-    background: #955cd6 url(../images/team-background-3.jpg) no-repeat center;
-    background-size: cover;
-    border: 0;
-    width: 100%;
-}
-
-.testimonials {
-    background: #955cd6 url(../images/testimonials-background-4.jpg) no-repeat center;
-    background-size: cover;
-    border: 0;
-    width: 100%;
-    height: 550px;
-}
-
-footer {
-    background: #955cd6 url(../images/footer-background-5.jpg) no-repeat center;
-    background-size: cover;
-    border: 0;
-    width: 100%;
-    height: 608px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 85px 15px 105px 15px;
 }
 
 
@@ -241,6 +183,14 @@ footer {
 
 
 /**************************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-transform: uppercase;
+}
 
 h1,
 h2,
@@ -257,7 +207,6 @@ h1 {
     font-size: 2.488rem;
     font-weight: 700;
     line-height: 3rem;
-    text-transform: uppercase;
 }
 
 h2 {
@@ -265,30 +214,26 @@ h2 {
     font-weight: 900;
     line-height: 2rem;
     margin-bottom: 15px;
-    text-transform: uppercase;
 }
 
 h3 {
     font-size: 1.3em;
     font-weight: 700;
     margin-top: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     line-height: 2rem;
-    text-transform: uppercase;
 }
 
 h4 {
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 2rem;
-    text-transform: uppercase;
 }
 
 h5 {
     font-size: 1.225rem;
     font-weight: 700;
     line-height: 2rem;
-    text-transform: uppercase;
 }
 
 p {
@@ -301,55 +246,10 @@ p {
 /**************************************************/
 
 
-/* Header 
-Logo + menu*/
+/* Button design */
 
 
 /**************************************************/
-
-.logo {
-    float: left;
-    position: relative;
-    top: 20px;
-    left: 20px;
-    padding: 0 15px;
-    border: 0;
-    width: 6.5em;
-    height: 2.5em;
-}
-
-.nav-bar {
-    float: right;
-    position: relative;
-    top: 20px;
-    right: 0px;
-    padding: 0 15px;
-    min-width: 10%;
-}
-
-
-/**************************************************/
-
-
-/* Hero page 
-Title + text + CTA button */
-
-
-/**************************************************/
-
-.hero-title {
-    padding-top: 25px;
-}
-
-.hero-text {
-    padding-bottom: 30px;
-    max-width: 60%;
-    box-sizing: border-box;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.dotnav {}
 
 button:hover {
     background-color: #00e0d0;
@@ -382,4 +282,477 @@ button {
     cursor: pointer;
     user-select: none;
     background-image: none;
+}
+
+
+/**************************************************/
+
+
+/* Background */
+
+
+/**************************************************/
+
+.hero,
+.video,
+.team,
+.testimonials,
+footer {
+    color: #fff;
+    width: auto;
+    height: auto;
+}
+
+.hero {
+    background: #581875 url(../images/hero-background-1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.story {}
+
+.video {
+    background: #581875 url(../images/video-background-2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.video-center {
+    text-align: center;
+    padding: 150px 15px 150px 15px;
+}
+
+.team {
+    background: #581875 url(../images/team-background-3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.testimonials {
+    background: #581875 url(../images/testimonials-background-4.jpg) no-repeat center;
+    background-size: cover;
+}
+
+footer {
+    background: #581875 url(../images/footer-background-5.jpg) no-repeat center;
+    background-size: cover;
+    padding: 55px 15px 80px 15px;
+    overflow: hidden;
+}
+
+
+/**************************************************/
+
+
+/* Hero page. Header.
+Logo + menu*/
+
+
+/**************************************************/
+
+header {
+    line-height: 20px;
+    width: 100%;
+    height: 5em;
+}
+
+.logo {
+    float: left;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding: 0 15px;
+    border: 0;
+    width: 6.5em;
+    height: 2.5em;
+}
+
+.nav-bar {
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 0px;
+    padding: 0 15px;
+    min-width: 10%;
+}
+
+ul.menu li {
+    padding: 15px 15px 20px 15px;
+}
+
+.hero-title {
+    padding-top: 25px;
+}
+
+.hero-text {
+    padding-bottom: 30px;
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.dotnav {}
+
+
+/**************************************************/
+
+
+/* Content */
+
+
+/**************************************************/
+
+.expertise-title {
+    margin-bottom: 90px;
+}
+
+.expertise {
+    text-align: center;
+}
+
+
+/* expertise items */
+
+.itemSign1,
+.itemSign2,
+.itemSign3,
+.itemSign4,
+.itemSign5,
+.itemSign6 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* Team section */
+
+.team-title {
+    margin-bottom: 90px;
+}
+
+.team.content {
+    padding: 70px 15px;
+}
+
+.team-button {
+    margin-top: 60px;
+}
+
+.teamPhotos {
+    text-align: center;
+}
+
+.teamCart1,
+.teamCart2,
+.teamCart3,
+.teamCart4 {
+    margin: 30px 15px 0 15px;
+    width: 220px;
+    height: 310px;
+    border: 1px solid #fff;
+}
+
+.teamPhotos img {
+    width: 100%;
+    height: auto;
+}
+
+.name {
+    padding-top: 10px;
+}
+
+p.position {
+    padding-bottom: 10px;
+}
+
+
+/* Works section */
+
+.works .content {
+    padding: 70px 0;
+    margin: 0;
+    border: 0;
+}
+
+.our-works {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.our-works h3 {
+    margin-top: 0;
+}
+
+.itemWrkRT1,
+.itemWrkRT2,
+.itemWrkRT3,
+.itemWrkRT4,
+.itemWrkRT5,
+.itemWrkRT6,
+.itemWrkRT7,
+.itemWrkRT8,
+.itemWrkRT9,
+.itemWrkRT10,
+.itemWrkRT11,
+.itemWrkRT12 {
+    width: auto;
+    height: auto;
+}
+
+
+/*  Testimonials  */
+
+.testTitle h1 {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 7rem;
+    font: Serif;
+    font-weight: 900;
+}
+
+.testPg {
+    display: inline-block;
+    text-align: center;
+    width: 75%;
+    margin: 0 0 15px 0;
+}
+
+.testFaces {
+    display: inline-flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.roundFace1>img,
+.roundFace2>img,
+.roundFace3>img,
+.roundFace4>img,
+.roundFace5>img {
+    border: 1px solid white;
+    margin: 2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+
+/* Contacts */
+
+.content .goodNews>h3 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    display: inline-block;
+}
+
+.goodNews {
+    position: relative;
+    text-align: left;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    width: 40%;
+}
+
+.goodNews>div {
+    margin-bottom: 10px;
+}
+
+.clients {
+    display: block;
+    float: right;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+}
+
+div.clientSignsLeft {
+    float: left;
+    width: 50%;
+}
+
+.clients>.clientSignsRight {
+    float: right;
+    width: 50%;
+}
+
+.clients>div>h3 {
+    margin-bottom: 1rem;
+    margin-top: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+
+/**************************************************/
+
+
+/* Responsive */
+
+
+/**************************************************/
+
+@media screen and (min-width: 840px) {
+    a.hidden {
+        display: none;
+    }
+    ul.menu {
+        display: flex;
+        flex-flow: row;
+    }
+    ul.menu li {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        flex: 1;
+    }
+    ul.menu p {
+        color: #fff;
+        font-size: 13px;
+    }
+    .flex-box {
+        display: inline-flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        width: 83%;
+    }
+    .piramid {
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .story-title {
+        text-align: left;
+        width: 53%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .photography {
+        text-align: center;
+        width: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .topPh {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .bottPh {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .itemSign1,
+    .itemSign2,
+    .itemSign3,
+    .itemSign4,
+    .itemSign5,
+    .itemSign6 {
+        width: 33%;
+    }
+    .teamPhotos {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 83%;
+    }
+    .our-works {
+        width: 70%;
+    }
+    .workItems {
+        display: inline-flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .content {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    ul.menu {
+        display: none;
+    }
+    .teamCart1,
+    .teamCart2,
+    .teamCart3,
+    .teamCart4 {
+        text-align: center;
+    }
+    .teamPhotos {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .our-works {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding-bottom: 50px;
+        width: 70%;
+    }
+    .workItems {
+        display: inline-flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .content {}
+    .hero {
+        padding: 15px;
+    }
+    .story-title {
+        text-align: left;
+    }
+    ul.menu {
+        display: none;
+    }
+    .teamPhotos {
+        text-align: center;
+    }
+    .rightTop {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+    .leftBotm {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
 }
